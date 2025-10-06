@@ -12,7 +12,7 @@ spec:
       labels:
         app: enduser-app
     spec: 
-      container:
+      containers:
       - name: enduser-app
       image: wilsonnn06/enduser-app:1.0
       ports: 
