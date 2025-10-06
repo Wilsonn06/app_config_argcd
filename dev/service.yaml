@@ -1,11 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: enduser-app
-spec: 
-  selector: 
+  name: enduser-app-service
+spec:
+  selector:
     app: enduser-app
-  ports: 
+  ports:
   - port: 8080
     protocol: TCP
     targetPort: 8080
+
