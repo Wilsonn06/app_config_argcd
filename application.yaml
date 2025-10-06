@@ -9,15 +9,15 @@ spec:
   source:
     repoURL: https://github.com/Wilsonn06/app_config_argcd.git
     targetRevision: HEAD
-destination:
-  server: https://kubernetes.default.svc
-  namespace: enduser-app
-
-syncPolicy:
-  syncOption:
-  - CreateNamespace=true
-
-  #untuk mengaktifkan sync otomatis
-  automated:
-    selfHeal: true
-    prune: true
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: enduser-app
+  
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+  
+    #untuk mengaktifkan sync otomatis
+    automated:
+      selfHeal: true
+      prune: true
